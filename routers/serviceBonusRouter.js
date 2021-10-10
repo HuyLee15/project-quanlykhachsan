@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router({ mergeParams: true });
-const serviceBonusController = require('../controllers/serviceBonusControler');
+const serviceBonusController = require('../controllers/serviceBonusController');
 
 router.route('/:id')
     .delete(serviceBonusController.deleteService)
