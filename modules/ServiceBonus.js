@@ -5,6 +5,10 @@ const bonusSchema = new mongoose.Schema({
         type: String,
         required: [true, 'Bonus name is invalid'],
     },
+    description: {
+        type: String,
+        required: [true, 'description is invalid'],
+    },
     price: {
         type: String,
         required: [true, 'Bonus price is invalid'],

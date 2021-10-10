@@ -10,7 +10,7 @@ const typeRoomSchema = new mongoose.Schema({
         required: [true, "Description is invalid"]
     },
     totals: {
-        type: String,
+        type: Number,
         required: [true, "Totals is invalid"]
     }
 }, {

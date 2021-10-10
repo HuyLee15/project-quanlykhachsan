@@ -24,6 +24,10 @@ module.exports = {
     }),
     getUser: asyncHandler(async(req, res, next) => {
         const user = await User.findById(req.params.id);
+        if (!user) res.json({
+            success: false,
+            data: `Cannot find user with UserID: ${req.params.id}`
+        })
         res.json({
             success: true,
             data: user,
